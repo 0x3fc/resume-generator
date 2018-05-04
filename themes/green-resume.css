@@ -6,8 +6,73 @@
 body {
     background-color: rgb(222, 234, 185);
 }
+
 #main {
     color: rgb(0, 149, 75);
     text-align: center;
+    justify-content: center;
+    align-items: center;
     font-family: 'Open Sans', sans-serif;
+}
+
+hr {
+    background-color: rgb(222, 234, 185);
+    border-top: 2px dashed rgb(0, 149, 75);
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 960px;
+    min-width: 650px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+a {
+    display: inline-block;
+    position: relative;
+    color: rgb(0, 149, 75);
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(0, 149, 75);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.center-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.separator {
+    display: flex;
+}
+
+.separator>li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 0.75rem;
+}
+
+.separator>li:not(:last-child) {
+    border-right: 2px solid #d2d5e4;
 }
