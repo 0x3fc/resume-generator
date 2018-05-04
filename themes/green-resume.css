@@ -40,6 +40,13 @@ hr {
     border-top: 2px dashed var(--text-color);
 }
 
+div > img {
+    width: 50%;
+    height: auto;
+    user-select: none;
+    pointer-events: none;
+}
+
 .container {
     margin-right: auto;
     margin-left: auto;
