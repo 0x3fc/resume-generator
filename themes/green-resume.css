@@ -21,6 +21,20 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+h1 {
+    user-select: none;
+}
+
+h2 {
+    padding-top: 15px;
+    display: flex;
+    user-select: none;
+}
+
+h2::before {
+    content: '#\00a0\00a0';
+}
+
 hr {
     background-color: var(--background-color);
     border-top: 2px dashed var(--text-color);

@@ -10,12 +10,22 @@
 <body>
     <div id="main" class="container">
         <div id="header"></div>
+        <div id="projects"></div>
+        <div id="working-experience"></div>
+        <div id="volunteering-experience"></div>
+        <div id="education"></div>
+        <div id="skills"></div>
     </div>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </body>
 <script>
 $(function () {
     $("#header").load("components/header.html");
+    $("#projects").load("components/projects.html");
+    $("#working-experience").load("components/working-experience.html");
+    $("#volunteering-experience").load("components/volunteering-experience.html");
+    $("#education").load("components/education.html");
+    $("#skills").load("components/skills.html");
 });
 </script>
 </html>
