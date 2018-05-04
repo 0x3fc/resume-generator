@@ -41,7 +41,7 @@ hr {
 }
 
 div > img {
-    width: 50%;
+    width: 30%;
     height: auto;
     user-select: none;
     pointer-events: none;
