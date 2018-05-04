@@ -1,14 +1,20 @@
+:root {
+    --text-color: rgb(0, 149, 75);
+    --text-color-light: rgb(111, 192, 130);
+    --background-color: rgb(222, 234, 185);
+}
+
 @font-face {
     font-family: 'Open Sans';
-    src: url('/fonts/OpenSans.ttf')
+    src: url('/fonts/OpenSans.ttf');
 }
 
 body {
-    background-color: rgb(222, 234, 185);
+    background-color: var(--background-color);
 }
 
 #main {
-    color: rgb(0, 149, 75);
+    color: var(--text-color);
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -16,8 +22,8 @@ body {
 }
 
 hr {
-    background-color: rgb(222, 234, 185);
-    border-top: 2px dashed rgb(0, 149, 75);
+    background-color: var(--background-color);
+    border-top: 2px dashed var(--text-color);
 }
 
 .container {
@@ -32,7 +38,7 @@ hr {
 a {
     display: inline-block;
     position: relative;
-    color: rgb(0, 149, 75);
+    color: var(--text-color);
 }
 
 a:link {
@@ -47,7 +53,7 @@ a::after {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: rgb(0, 149, 75);
+    background-color: var(--text-color-light);
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
@@ -74,5 +80,5 @@ a:hover::after {
 }
 
 .separator>li:not(:last-child) {
-    border-right: 2px solid #d2d5e4;
+    border-right: 2px solid var(--text-color-light);
 }
