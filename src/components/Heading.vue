@@ -1,0 +1,38 @@
+<template>
+    <div>
+        <h1>Senhung Wong</h1>
+        <div class="center-flex">
+            <ul class="separator">
+                <li>
+                    <a href="mailto:wongsenw@sfu.ca">
+                        <i class="far fa-envelope"></i>
+                        wongsenw@sfu.ca
+                    </a>
+                </li>
+                <li>
+                    <a href="http://senhung.net" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                        senhung.net
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/senhungwong" target="_blank">
+                        <i class="fab fa-github"></i>
+                        github.com/senhungwong
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <hr />
+    </div>
+</template>
+
+<script>
+export default {
+
+}
+</script>
+
+<style>
+
+</style>

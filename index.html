@@ -1,33 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <!-- Theme -->
-    <link rel="stylesheet" href="themes/green-resume.css">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
-    <title>Senhung</title>
-</head>
-<body>
-    <div id="main" class="container">
-        <div id="header"></div>
-        <div id="projects"></div>
-        <div id="working-experience"></div>
-        <div id="volunteering-experience"></div>
-        <div id="education"></div>
-        <div id="skills"></div>
-        <div id="logo"></div>
-    </div>
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-</body>
-<script>
-$(function () {
-    $("#header").load("components/header.html");
-    $("#projects").load("components/projects.html");
-    $("#working-experience").load("components/working-experience.html");
-    $("#volunteering-experience").load("components/volunteering-experience.html");
-    $("#education").load("components/education.html");
-    $("#skills").load("components/skills.html");
-    $("#logo").load("components/logo.html");
-});
-</script>
+    <head>
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+        <meta charset="utf-8">
+        <title>Senhung</title>
+    </head>
+    <body>
+        <div id="app"></div>
+        <script src="./dist/build.js"></script>
+    </body>
 </html>

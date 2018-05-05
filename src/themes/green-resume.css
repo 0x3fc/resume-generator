@@ -4,16 +4,11 @@
     --background-color: rgb(222, 234, 185);
 }
 
-@font-face {
-    font-family: 'Open Sans';
-    src: url('/fonts/OpenSans.ttf');
-}
-
 body {
     background-color: var(--background-color);
 }
 
-#main {
+#app {
     color: var(--text-color);
     text-align: center;
     justify-content: center;
@@ -102,4 +97,8 @@ a:hover::after {
 
 .separator>li:not(:last-child) {
     border-right: 2px solid var(--text-color-light);
+}
+
+table, th, td {
+    border: 0;
 }
