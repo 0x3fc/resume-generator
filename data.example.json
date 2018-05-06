@@ -1,0 +1,31 @@
+{
+    "heading": {
+        "name": "",
+        "subheaders": [
+            {
+                "text": "", 
+                "icon": "",
+                "link": "", 
+                "newpage": true
+            }
+        ]
+    },
+    "projects": [
+        {
+            "name": "", 
+            "link": "",
+            "description": "",
+            "demo": ""
+        }
+    ],
+    "work_experiences": [
+        {
+            "company": "",
+            "link": "",
+            "location": "",
+            "title": "",
+            "from": "",
+            "to": ""
+        }
+    ]
+}
