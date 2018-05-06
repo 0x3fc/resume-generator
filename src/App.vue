@@ -8,8 +8,11 @@
         <projects 
             :projects="projects">
         </projects>
-        
-        <work-experience></work-experience>
+
+        <work-experience
+            :experiences="workExperiences">
+        </work-experience>
+
         <volunteer-experience></volunteer-experience>
         <education></education>
         <skills></skills>
@@ -65,7 +68,17 @@ export default {
                     description: 'A cross-platform desktop application using electron framework that calculates GPA in both 4.00 and 4.33 scales.',
                     demo: null
                 },
-            ]
+            ],
+            workExperiences: [
+                {
+                    company: 'Blockchain Intelligence Group',
+                    link: 'https://blockchaingroup.io/',
+                    location: 'Vancouver, BC',
+                    title: 'Back-end Developer',
+                    from: '2018-01-01',
+                    to: '2018-08-31',
+                },
+            ],
         }
     },
     components: {

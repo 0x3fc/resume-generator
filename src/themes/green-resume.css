@@ -60,6 +60,10 @@ div > img {
     pointer-events: none;
 }
 
+.light-color {
+    color: var(--text-color-light);
+}
+
 .container {
     margin-right: auto;
     margin-left: auto;
