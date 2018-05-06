@@ -1,18 +1,8 @@
 <template>
     <div id="app" class="container">
-        <heading 
-            :name="heading.name"
-            :subheaders="heading.subheaders">
-        </heading>
-
-        <projects 
-            :projects="projects">
-        </projects>
-
-        <work-experience
-            :experiences="workExperiences">
-        </work-experience>
-
+        <heading :heading="heading"></heading>
+        <projects :projects="projects"></projects>
+        <work-experience :experiences="workExperiences"></work-experience>
         <volunteer-experience></volunteer-experience>
         <education></education>
         <skills></skills>
