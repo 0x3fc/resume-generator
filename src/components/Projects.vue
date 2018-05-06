@@ -1,9 +1,13 @@
 <template>
     <div>
         <h2>Projects</h2>
-        <div class="center-flex">
-            <project></project>
-            <project></project>
+        <div class="center-flex" v-for="project in projects" :key="project.name">
+            <project 
+                :name="project.name"
+                :link="project.link"
+                :description="project.description"
+                :demo="project.demo">
+            </project>
         </div>
     </div>
 </template>
@@ -12,6 +16,9 @@
 import Project from '../templates/Project';
 
 export default {
+    props: {
+        projects: Array
+    },
     components: {
         Project
     }

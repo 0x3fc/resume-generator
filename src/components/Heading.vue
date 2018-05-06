@@ -1,24 +1,12 @@
 <template>
     <div>
-        <h1>Senhung Wong</h1>
+        <h1>{{ name }}</h1>
         <div class="center-flex">
             <ul class="separator">
-                <li>
-                    <a href="mailto:wongsenw@sfu.ca">
-                        <i class="far fa-envelope"></i>
-                        wongsenw@sfu.ca
-                    </a>
-                </li>
-                <li>
-                    <a href="http://senhung.net" target="_blank">
-                        <i class="fas fa-external-link-alt"></i>
-                        senhung.net
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/senhungwong" target="_blank">
-                        <i class="fab fa-github"></i>
-                        github.com/senhungwong
+                <li v-for="subheader in subheaders" :key="subheader.text">
+                    <a :href="subheader.link" :target="subheader.newpage ? '_blank' : null">
+                        <i :class="subheader.icon"></i>
+                        {{ subheader.text }}
                     </a>
                 </li>
             </ul>
@@ -29,7 +17,10 @@
 
 <script>
 export default {
-
+    props: {
+        name: String,
+        subheaders: Array
+    }
 }
 </script>
 
