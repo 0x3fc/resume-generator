@@ -1,0 +1,126 @@
+:root {
+    --text-color: black;
+    --text-color-light: grey;
+    --background-color: white;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+#app {
+    color: var(--text-color);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+
+}
+
+h2 {
+    display: flex;
+    position: relative;
+}
+
+h2::before {
+
+}
+
+h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+hr {
+
+}
+
+.card {
+    text-align: left;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.card:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+}
+
+.moreonhover .more {
+    max-height: 0;
+    transition: max-height 1s ease-out;
+    overflow: hidden;
+}
+
+.moreonhover:hover .more {
+    max-height: 1000px;
+    transition: max-height 0.5s ease-in;
+}
+
+div > img {
+    width: 30%;
+    height: auto;
+    user-select: none;
+    pointer-events: none;
+}
+
+.light-color {
+    color: var(--text-color-light);
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 960px;
+    min-width: 650px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+a {
+    display: inline-block;
+    position: relative;
+    color: var(--text-color);
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a::after {
+
+}
+
+a:hover::after {
+
+}
+
+.center-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.separator {
+    display: flex;
+}
+
+.separator>li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 0.75rem;
+}
+
+.separator>li:not(:last-child) {
+    border-right: 2px solid var(--text-color-light);
+}

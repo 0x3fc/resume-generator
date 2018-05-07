@@ -3,7 +3,7 @@
         <div class="container moreonhover">
             <h3><a :href="link" target="_blank">{{ name }}</a><span v-html="parseDemo"></span></h3>
             <span style="user-select: none;">{{ description }}</span>
-            <div class="more">
+            <div class="more" id="img">
                 <carousel :per-page="1">
                     <template v-for="picture in pictures">
                         <slide :key="picture">

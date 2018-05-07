@@ -15,5 +15,5 @@ export default {
 </script>
 
 <style>
-@import './themes/green-resume.css';
+@import './themes/midori.css';
 </style>

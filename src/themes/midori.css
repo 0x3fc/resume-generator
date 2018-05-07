@@ -1,0 +1,140 @@
+:root {
+    --text-color: rgb(0, 149, 75);
+    --text-color-light: rgb(111, 192, 130);
+    --background-color: rgb(222, 234, 185);
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+#app {
+    color: var(--text-color);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    user-select: none;
+}
+
+h2 {
+    padding-top: 15px;
+    display: flex;
+    user-select: none;
+    left: -1.5rem;
+    position: relative;
+}
+
+h2::before {
+    content: '#\00a0\00a0';
+}
+
+h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+hr {
+    background-color: var(--background-color);
+    border-top: 2px dashed var(--text-color);
+}
+
+.card {
+    text-align: left;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.card:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+}
+
+.moreonhover .more {
+    max-height: 0;
+    transition: max-height 1s ease-out;
+    overflow: hidden;
+}
+
+.moreonhover:hover .more {
+    max-height: 1000px;
+    transition: max-height 0.5s ease-in;
+}
+
+div > img {
+    width: 30%;
+    height: auto;
+    user-select: none;
+    pointer-events: none;
+}
+
+.light-color {
+    color: var(--text-color-light);
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 960px;
+    min-width: 650px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+a {
+    display: inline-block;
+    position: relative;
+    color: var(--text-color);
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--text-color-light);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.center-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.separator {
+    display: flex;
+}
+
+.separator>li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 0.75rem;
+}
+
+.separator>li:not(:last-child) {
+    border-right: 2px solid var(--text-color-light);
+}

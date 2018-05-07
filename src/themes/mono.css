@@ -1,7 +1,7 @@
 :root {
-    --text-color: rgb(0, 149, 75);
-    --text-color-light: rgb(111, 192, 130);
-    --background-color: rgb(222, 234, 185);
+    --text-color: black;
+    --text-color-light: grey;
+    --background-color: white;
 }
 
 html::-webkit-scrollbar {
@@ -57,22 +57,14 @@ hr {
     border-radius: 3px;
 }
 
-.moreonhover .more {
-    max-height: 0;
-    transition: max-height 1s ease-out;
-    overflow: hidden;
-}
-
-.moreonhover:hover .more {
-    max-height: 1000px;
-    transition: max-height 0.5s ease-in;
-}
-
 div > img {
+    display: block;
     width: 30%;
     height: auto;
     user-select: none;
     pointer-events: none;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
 }
 
 .light-color {
@@ -139,6 +131,6 @@ a:hover::after {
     border-right: 2px solid var(--text-color-light);
 }
 
-table, th, td {
-    border: 0;
+#img {
+    display: none;
 }
