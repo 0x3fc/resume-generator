@@ -3,7 +3,7 @@
         <heading :heading="heading"></heading>
         <projects :projects="projects"></projects>
         <work-experience :experiences="workExperiences"></work-experience>
-        <volunteer-experience></volunteer-experience>
+        <volunteer-experience :experiences="volunteerExperiences"></volunteer-experience>
         <education></education>
         <skills></skills>
         <logo></logo>
@@ -25,7 +25,8 @@ export default {
         return {
             heading: data.heading,
             projects: data.projects,
-            workExperiences: data.work_experiences
+            workExperiences: data.work_experiences,
+            volunteerExperiences: data.volunteer_experiences
         }
     },
     components: {

@@ -27,5 +27,15 @@
             "from": "",
             "to": ""
         }
+    ],
+    "volunteer_experiences": [
+        {
+            "company": "",
+            "link": "",
+            "location": "",
+            "title": "",
+            "from": "",
+            "to": ""
+        }
     ]
 }
