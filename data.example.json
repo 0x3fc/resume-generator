@@ -37,5 +37,15 @@
             "from": "",
             "to": ""
         }
+    ],
+    "educations": [
+        {
+            "place": "",
+            "link": "",
+            "location": "",
+            "program": "",
+            "from": "",
+            "to": ""
+        }
     ]
 }

@@ -4,15 +4,15 @@
             <!-- Name + Time -->
             <h3 style="float: left;">
                 <a :href="link" target="_blank">
-                    {{ company }}
+                    {{ place }}
                 </a>
             </h3>
             <h3 style="float: right;">
                 {{ from }} <span class="light-color">⤏</span> {{ to }}
             </h3>
-            <!-- Title + Location -->
+            <!-- Title/Program + Location -->
             <p style="clear: both; float: left;">
-                {{ title }}
+                {{ position }}
             </p>
             <p style="float: right;">
                 <i class="fas fa-map-marker-alt"></i>
@@ -25,10 +25,10 @@
 <script>
 export default {
     props: {
-        company: String,
+        place: String,
         link: String,
         location: String,
-        title: String,
+        position: String,
         from: String,
         to: String
     }

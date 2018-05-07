@@ -3,10 +3,10 @@
         <h2>Volunteer Experience</h2>
         <div class="center-flex" v-for="experience in experiences" :key="experience.from">
             <experience
-                :company="experience.company"
+                :place="experience.company"
                 :link="experience.link"
                 :location="experience.location"
-                :title="experience.title"
+                :position="experience.title"
                 :from="experience.from"
                 :to="experience.to">
             </experience>
