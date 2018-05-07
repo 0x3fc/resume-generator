@@ -1,41 +1,15 @@
 <template>
-    <div id="app" class="container">
-        <heading :heading="heading"></heading>
-        <projects :projects="projects"></projects>
-        <work-experience :experiences="workExperiences"></work-experience>
-        <volunteer-experience></volunteer-experience>
-        <education></education>
-        <skills></skills>
-        <logo></logo>
+    <div id="app">
+        <app-template></app-template>
     </div>
 </template>
 
 <script>
-import Heading from './components/Heading';
-import Projects from './components/Projects';
-import WorkExperience from './components/WorkExperience';
-import VolunteerExperience from './components/VolunteerExperience';
-import Education from './components/Education';
-import Skills from './components/Skills';
-import Logo from './components/Logo';
-import data from '../data.json';
+import AppTemplate from './templates/App';
 
 export default {
-    data() {
-        return {
-            heading: data.heading,
-            projects: data.projects,
-            workExperiences: data.work_experiences
-        }
-    },
     components: {
-        Heading,
-        Projects,
-        WorkExperience,
-        VolunteerExperience,
-        Education,
-        Skills,
-        Logo
+        AppTemplate
     }
 }
 </script>
