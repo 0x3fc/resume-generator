@@ -1,17 +1,15 @@
 <template>
-    <div class="center-flex">
-        <img :src="Logo">
+    <div class="center-flex" style="marginTop: 150px; marginBottom: 30px;">
+        <logo></logo>
     </div>
 </template>
 
 <script>
-import Logo from '../assets/logo.png';
+import Logo from '../templates/Logo';
 
 export default {
-    data() {
-        return {
-            Logo
-        }
+    components: {
+        Logo
     }
 }
 </script>
