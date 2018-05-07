@@ -40,7 +40,7 @@ $ npm run dev
 $ npm run build
 ```
 
-## Themes
+## Theme
 
 ### Make
 
@@ -48,7 +48,7 @@ Create your own theme using `src/themes/template.css`.
 
 ### Use
 
-Use your own theme by changing `src/templates/App.vue` 
+Use your own theme by changing `src/App.vue` 
 
 ```vue
 <style>
@@ -60,7 +60,7 @@ Use your own theme by changing `src/templates/App.vue`
 
 ### Make
 
-Create your own template in `src/templates/`
+Create your own template in `src/templates/<your-template>.vue`
 
 ### Use
 

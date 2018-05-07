@@ -43,5 +43,5 @@ export default {
 </script>
 
 <style>
-@import '../themes/green-resume.css';
+
 </style>
