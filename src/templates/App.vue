@@ -4,7 +4,7 @@
         <projects :projects="projects"></projects>
         <work-experience :experiences="workExperiences"></work-experience>
         <volunteer-experience :experiences="volunteerExperiences"></volunteer-experience>
-        <education></education>
+        <education :educations="educations"></education>
         <skills></skills>
         <logo></logo>
     </div>
@@ -26,7 +26,8 @@ export default {
             heading: data.heading,
             projects: data.projects,
             workExperiences: data.work_experiences,
-            volunteerExperiences: data.volunteer_experiences
+            volunteerExperiences: data.volunteer_experiences,
+            educations: data.educations
         }
     },
     components: {
