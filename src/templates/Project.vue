@@ -4,10 +4,10 @@
             <h3><a :href="link" target="_blank">{{ name }}</a><span v-html="parseDemo"></span></h3>
             <span style="user-select: none;">{{ description }}</span>
             <div class="more">
-                <carousel>
+                <carousel :per-page="1">
                     <template v-for="picture in pictures">
                         <slide :key="picture">
-                            <img :src="picture" style="height: auto; width: 100%;">
+                            <img :src="picture" style="height: auto; width: 100%; marginTop: 10px;">
                         </slide>
                     </template>
                 </carousel>

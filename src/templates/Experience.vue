@@ -1,6 +1,6 @@
 <template>
-    <div class="card">
-        <div class="container" style="user-select: none;">
+    <div class="card moreonhover" style="user-select: none;">
+        <div class="container">
             <!-- Name + Time -->
             <h3 style="float: left;">
                 <a :href="link" target="_blank">
@@ -19,6 +19,11 @@
                 {{ location }}
             </p>
         </div>
+        <div class="container more" style="clear: both;">
+            <ul v-for="item in more" :key="item">
+                <li>{{item}}</li>
+            </ul>
+        </div>
     </div>
 </template>
 
@@ -30,7 +35,8 @@ export default {
         location: String,
         position: String,
         from: String,
-        to: String
+        to: String,
+        more: Array
     }
 }
 </script>

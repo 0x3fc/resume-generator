@@ -8,7 +8,8 @@
                 :location="education.location"
                 :position="education.program"
                 :from="education.from"
-                :to="education.to">
+                :to="education.to"
+                :more="education.more">
             </experience>
         </div>
     </div>

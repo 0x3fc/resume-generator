@@ -8,7 +8,8 @@
                 :location="experience.location"
                 :position="experience.title"
                 :from="experience.from"
-                :to="experience.to">
+                :to="experience.to"
+                :more="experience.more">
             </experience>
         </div>
     </div>
