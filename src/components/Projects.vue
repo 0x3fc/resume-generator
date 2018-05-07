@@ -5,6 +5,7 @@
             <project 
                 :name="project.name"
                 :link="project.link"
+                :pictures="project.pictures"
                 :description="project.description"
                 :demo="project.demo">
             </project>

@@ -57,6 +57,17 @@ hr {
     border-radius: 3px;
 }
 
+.moreonhover .more {
+    max-height: 0;
+    transition: max-height 1s ease-out;
+    overflow: hidden;
+}
+
+.moreonhover:hover .more {
+    max-height: 1000px;
+    transition: max-height 0.5s ease-in;
+}
+
 div > img {
     width: 30%;
     height: auto;

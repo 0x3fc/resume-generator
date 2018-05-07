@@ -1,25 +1,35 @@
 <template>
-    <div class="card" @mouseover="active = true" @mouseleave="active = false">
-        <div class="container">
+    <div class="card">
+        <div class="container moreonhover">
             <h3><a :href="link" target="_blank">{{ name }}</a><span v-html="parseDemo"></span></h3>
             <span style="user-select: none;">{{ description }}</span>
-            <div v-if="active">Images</div>
+            <div class="more">
+                <carousel>
+                    <template v-for="picture in pictures">
+                        <slide :key="picture">
+                            <img :src="picture" style="height: auto; width: 100%;">
+                        </slide>
+                    </template>
+                </carousel>
+            </div>
         </div>
     </div>
 </template>
 
 <script>
+import { Carousel, Slide } from 'vue-carousel';
+
 export default {
     props: {
         name: String,
         link: String,
         description: String,
-        demo: String
+        demo: String,
+        pictures: Array
     },
-    data() {
-        return {
-            active: false
-        }
+    components: {
+        Carousel,
+        Slide
     },
     computed: {
         parseDemo() {
