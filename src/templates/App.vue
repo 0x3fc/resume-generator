@@ -1,11 +1,11 @@
 <template>
     <div class="container">
         <heading :heading="heading"></heading>
+        <skills :skills="skills"></skills>
         <projects :projects="projects"></projects>
         <work-experience :experiences="workExperiences"></work-experience>
         <volunteer-experience :experiences="volunteerExperiences"></volunteer-experience>
         <education :educations="educations"></education>
-        <skills></skills>
         <logo></logo>
     </div>
 </template>
@@ -27,7 +27,8 @@ export default {
             projects: data.projects,
             workExperiences: data.work_experiences,
             volunteerExperiences: data.volunteer_experiences,
-            educations: data.educations
+            educations: data.educations,
+            skills: data.skills
         }
     },
     components: {

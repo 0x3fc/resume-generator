@@ -47,5 +47,13 @@
             "from": "",
             "to": ""
         }
-    ]
+    ],
+    "skills": {
+        "some title": [
+            "some content"
+        ],
+        "another title": [
+            "some content"
+        ]
+    }
 }
