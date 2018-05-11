@@ -1,7 +1,7 @@
 <template>
     <div id="app">
-        <!-- <app-template></app-template> -->
-        <mono-print></mono-print>
+        <app-template></app-template>
+        <!-- <mono-print></mono-print> -->
     </div>
 </template>
 
@@ -18,5 +18,5 @@ export default {
 </script>
 
 <style>
-@import './themes/mono.css';
+@import './themes/midori.css';
 </style>
