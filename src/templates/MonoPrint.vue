@@ -1,12 +1,23 @@
 <template>
     <div class="container">
-        <heading :heading="heading"></heading>
-        <skills :skills="skills"></skills>
-        <projects :projects="projects"></projects>
-        <work-experience :experiences="workExperiences"></work-experience>
-        <volunteer-experience :experiences="volunteerExperiences"></volunteer-experience>
-        <education :educations="educations"></education>
-        <logo></logo>
+        <div class="container">
+            <heading :heading="heading"></heading>
+            <p>
+                The resume contains a lot of links, view the website version on 
+                <a href="http://resume.senhung.net" target="_blank">http://resume.senhung.net</a>. Thank you!
+            </p>
+            <skills :skills="skills"></skills>
+            <projects :projects="projects"></projects>
+            <p>
+                View my other 10+ projects on 
+                <a href="http://resume.senhung.net" target="_blank">http://resume.senhung.net</a> or
+                <a href="http://github.com/senhungwong" target="_blank">http://github.com/senhungwong</a>. Thank you!
+            </p>
+            <work-experience :experiences="workExperiences"></work-experience>
+            <volunteer-experience :experiences="volunteerExperiences"></volunteer-experience>
+            <education :educations="educations"></education>
+            <logo></logo>
+        </div>
     </div>
 </template>
 
