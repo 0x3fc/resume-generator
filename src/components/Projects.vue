@@ -4,6 +4,7 @@
         <div class="center-flex" v-for="project in projects" :key="project.name">
             <project 
                 :name="project.name"
+                :tags="project.tags"
                 :link="project.link"
                 :pictures="project.pictures"
                 :description="project.description"

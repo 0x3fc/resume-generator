@@ -140,3 +140,16 @@ a:hover::after {
 .separator>li:not(:last-child) {
     border-right: 2px solid var(--text-color-light);
 }
+
+tag {
+    display: inline-block;
+    font-size: 0.8rem;
+    position: relative;
+    border: 1px solid var(--text-color-light);
+    border-radius: 0.2rem;
+    vertical-align: middle;
+    transition: all 0.2s ease-out;
+    user-select: none;
+    padding: 0 0.5rem;
+    margin: 0 0.2rem;
+}
