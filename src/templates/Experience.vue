@@ -8,7 +8,7 @@
                 </a>
             </h3>
             <h3 style="float: right;">
-                {{ from }} <span class="light-color">⤏</span> {{ to }}
+                {{ from }} <i class="fas fa-arrow-right"></i> {{ to }}
             </h3>
             <!-- Title/Program + Location -->
             <p style="clear: both; float: left;">
