@@ -9,7 +9,7 @@
             <skills :skills="skills"></skills>
             <projects :projects="projects"></projects>
             <p>
-                View my other 10+ projects on 
+                View my other {{ numberOfProjects }} projects on 
                 <a href="http://resume.senhung.net" target="_blank">http://resume.senhung.net</a> or
                 <a href="http://github.com/senhungwong" target="_blank">http://github.com/senhungwong</a>. Thank you!
             </p>
@@ -57,7 +57,10 @@ export default {
                 projects[i].demo = null;
             }
             return projects;
-        }
+        },
+        numberOfProjects() {
+            return data.projects.length;
+        },
     }
 }
 </script>
