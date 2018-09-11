@@ -59,7 +59,7 @@ export default {
             return projects;
         },
         numberOfProjects() {
-            return data.projects.length;
+            return data.projects.length - 4;
         },
     }
 }
